@@ -1,0 +1,153 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: rgb(242, 238, 238);
+}
+/* Apply Material Design styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+    color: #0693cb;
+}
+/* Navigation styles */
+header {
+    background-color: #000306; /* Material Design primary color */
+    color: rgb(244, 243, 243);
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(243, 239, 239);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d3d013; /* Material Design accent color */
+}
+
+/* Hero section styles */
+main {
+    margin-top: 0px;
+    padding-top: 5px;
+    text-align: center;
+    padding: 50px;
+    /* Other styles for your main content */
+  }
+  
+  .background-image {
+    background-image: url('wall (15).jpg');
+    background-size: cover;
+    filter: brightness(70%); /* Adjust the percentage to control brightness */
+    /* Set the width and height to cover the whole background */
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    position: fixed; /* Fix the position to the viewport */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind other content */
+  }
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgba(249, 212, 3, 0.888);
+}
+
+.hero p {
+    font-size: 25px;
+    color: rgba(249, 212, 3, 0.888);
+}
+
+/* Footer styles */
+footer {
+    background-color: #000408;
+    color: rgb(242, 238, 238);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+/* Define media queries for responsive design */
+@media (max-width: 768px) {
+    /* Adjust navigation styles for smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    /* Adjust hero section padding for smaller screens */
+    .hero {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for even smaller screens */
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-previous,
+.carousel-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
+    color: white;
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: center;
+    line-height: 50px; /* Center the text vertically */
+    border-radius: 50%; /* Create a circular button */
+}
+
+.carousel-previous {
+    left: 10px; /* Adjust the distance from the left */
+}
+
+.carousel-next {
+    right: 10px; /* Adjust the distance from the right */
+}

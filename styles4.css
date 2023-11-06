@@ -1,0 +1,148 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: rgb(242, 238, 238);
+}
+/* Apply Material Design styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #021a29;
+    color: #f7f703;
+}
+/* Navigation styles */
+header {
+    background-color: #000306; /* Material Design primary color */
+    color: rgb(244, 243, 243);
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(243, 239, 239);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d3d013; /* Material Design accent color */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #000408;
+    color: rgb(242, 238, 238);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+main {
+    margin-top: 0px;
+    padding-top: 5px;
+    /* Other styles for your main content */
+  }
+  
+  .background-image {
+    background-image: url('wall (15).jpg');
+    background-size: cover;
+    filter: brightness(70%); /* Adjust the percentage to control brightness */
+    /* Set the width and height to cover the whole background */
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    position: fixed; /* Fix the position to the viewport */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind other content */
+  }
+  
+
+.contact-form {
+    background-color: #02020265;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px auto;
+    width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #d3d013;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #d3d013;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddddddfa;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    background-color: #07070774;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto; /* Center horizontally with auto margins */
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+}
+
+.contact-info h2 {
+    color: #d3d013;
+    margin-bottom: 10px;
+    text-align: center; /* Center the text horizontally within the h2 element */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}

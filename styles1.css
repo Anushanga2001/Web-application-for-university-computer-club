@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Material Design styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f3e5b;
+    color: #333;
+}
+
+/* Navigation styles (you can keep this if the navigation is consistent across pages) */
+header {
+    background-color: #000306; /* Material Design primary color */
+    color: rgb(244, 243, 243);
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d3d013; /* Material Design accent color */
+}
+
+/* About Us section styles */
+main {
+    margin-top: 0px;
+    padding-top: 5px;
+    /* Other styles for your main content */
+  }
+  
+  .background-image {
+    background-image: url('wall (15).jpg');
+    background-size: cover;
+    filter: brightness(70%); /* Adjust the percentage to control brightness */
+    /* Set the width and height to cover the whole background */
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    position: fixed; /* Fix the position to the viewport */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind other content */
+  }
+  
+
+.about-us h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(247, 247, 4);
+}
+.about-us img
+{
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  display: block; /* Remove any default inline alignment */
+  margin: 0 auto; /* Center the image horizontally within the container */
+  size: 10px; /* This doesn't set the size, use width or height for size */
+  padding: 5px;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: rgb(250, 250, 246);
+    padding: 5px;
+    padding-left:3%;
+    padding-right: 3%;
+}
+
+/* Footer styles (you can keep this if the footer is consistent across pages) */
+footer {
+    background-color: #000408;
+    color: rgb(242, 238, 238);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+/* CSS for the carousel container and slides */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+    width: 600px; /* Set a fixed width for all items */
+    height: 400px; /* Set a fixed height for all items */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the image's aspect ratio while covering the container */
+}
+.test-box {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.test-box img {
+    width: auto; /* Adjust the width as needed */
+    margin-right: 10px; /* Add space between image and text */
+    margin-left: 20px;
+    height: 300px;
+}
+
+.test-box .text {
+    flex: 1; /* Take remaining available space */
+}

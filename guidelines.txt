@@ -1,0 +1,5 @@
+1. create a database , It name should computerclubuok
+2. database has table
+      there are
+      1. user - record the data in register page
+      2. complain - record the data in contact page

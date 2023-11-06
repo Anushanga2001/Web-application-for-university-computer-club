@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background-image"></div>
+        <section class="register ">
+            <div id="registration-container">
+            <form action="insertion.php" method="POST">
+                <h1>Registation for Freshers</h1>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="password" id="password" name="password" placeholder="Password" minlength="6" required>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" minlength="6" required>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" pattern="0\d{9}" required>
+                <input type="number" id="age" name="age" placeholder="Age" required>
+                <input type="Submit" id="submit" value="submit"/>
+              </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Kelaniya University Computer Club</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>
