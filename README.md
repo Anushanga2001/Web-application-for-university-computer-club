@@ -1,1 +1,2 @@
+# Project About
 This is a comprehensive web application for a university computer club. Its core functionality is built using a PHP backend that manages dynamic content and user interactions by connecting to a MySQL database.
